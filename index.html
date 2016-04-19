@@ -12,59 +12,125 @@
     </noscript>
 </head>
 
-<body>
-    <header class="main-header">
-        <div class="logo">
-            <a href="index.html">Pink</a>
+<body class="index-page">
+    <header class="page-header">
+        <div class="page-header__logo-wrap">
+            <a href="/" class="page-header__logo-link">Pink</a>
         </div>
-        <nav class="main-navigation"></nav>
-        <div>Взгляните на жизнь иначе!</div>
+        <div class="page-header__nav-wrap">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Возможности</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                </ul>
+                <a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <div class="container-content">
-            <a href="#" class="btn download">Скачать приложение</a>
-            <div class="logos"><img class="apple-logo" src="img/" width="" height="" alt="">
-            <img class="android-logo" src="img/" width="" height="" alt="">
-            <img class="windows-logo" src="img/" width="" height="" alt="">
-            </div>
-            <p>Доступно для iPhone, iPad, Android, Windows phone, MacOS, Windows 8</p>
+    <section class="pink-promo">
+        <div class="pink-promo__wrapper">
+            <h1 class="pink-promo__header">Взгляните на жизнь иначе!</h1>
+            <img class="pink-promo__img" src="img/iphone-hand-1.png">
         </div>
-        <div class="container-content">
-            <h1>Устали от серости мегаполиса? Нам есть что вам предложить!</h1>
-            <section><h2>Поднимает настроение</h2>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </section>
-            <section><h2>Меняет мир вокруг</h2>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </section>
-            <section><h2>Заводит новых друзей</h2>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </section>
+    </section>
+    <section class="download">
+        <div class="download__wrapper">
+            <a href="#" class="download__btn">Скачать приложение</a>
+            <div class="download__logos">
+                <img class="logos__apple-logo" src="img/" width="" height="" alt="">
+                <img class="logos__android-logo" src="img/" width="" height="" alt="">
+                <img class="logos__windows-logo" src="img/" width="" height="" alt="">
+            </div>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows phone, MacOS, Windows 8</p>
+        </div>
+    </section>
+    <section class="reasons">
+        <div class="reasons__inner">
+            <h1 class="reasons__header">Устали от серости мегаполиса? Нам есть что вам предложить!</h1>
+            <article class="reasons__item">
+                <h2>Поднимает настроение</h2>
+                <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </article>
+            <article class="reasons__item">
+                <h2>Меняет мир вокруг</h2>
+                <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </article>
+            <article class="reasons__item">
+                <h2>Заводит новых друзей</h2>
+                <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </article>
             <img src="img/iphone-screen-1-3@1x.png" alt="Smile" width="142" height="251">
         </div>
-        <section class="container-content reviews">
-            <h2>Николай Петров</h2>
-            <p>"Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-        </section>
-        <div class="container-content price">
-            <span>Стандарт</span>
-            <span>3,99 USD</span>
-            <span>Розовый фильтр</span>
-            <span>Смайлики</span>
-            <span>Комментарии</span>
+    </section>
+    <section class="reviews">
+        <div class="reviews__inner">
+            <div class="slider-reviews">
+                <article class="slider-reviews__item">
+                    <h1 class="slider-reviews__header">Николай Петров</h1>
+                    <div class="slider-reviews__text">"Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</div>
+                </article>
+                <article class="slider-reviews__item">
+                    <h1 class="slider-reviews__header">2Николай Петров</h1>
+                    <div class="slider-reviews__text">"Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</div>
+                </article>
+                <article class="slider-reviews__item">
+                    <h1 class="slider-reviews__header">3Николай Петров</h1>
+                    <div class="slider-reviews__text">"Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</div>
+                </article>
+                <div class="slider-reviews__pagination">
+                    <i class="slider-reviews__pagination-active"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer>
-        <div>
-            <h2>Остались вопросы? Свяжитесь с нами!</h2>
-            <p>Звоните:</p>
-            <p>8(800) 1000 900</p>
-            <p>Пишите:</p>
-            <p>hello@pinkapp.ru</p>
+    </section>
+    <section class="price">
+        <div class="price__table-wrap">
+            <table class="price__table">
+                <tr>
+                    <td class="price__table-col-1">Стандарт</td>
+                </tr>
+                <tr>
+                    <td class="price__table-col-1">3,99 USD</td>
+                </tr>
+                <tr>
+                    <td class="price__table-col-1">Розовый фильтр</td>
+                </tr>
+                <tr>
+                    <td class="price__table-col-1">Смайлики</td>
+                </tr>
+                <tr>
+                    <td class="price__table-col-1">Комментарии</td>
+                </tr>
+            </table>
         </div>
-        <p>Приезжайте в гости!</p>
-        <p>Санкт-Петербург, Невский проспект, д. 20</p>
-        <div class="map">
+        <div class="price__pagination">
+            <i></i>        
+            <i class="price__pagination-active"></i>
+                    <i></i>
+                    
+                </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="page-footer__inner">
+            <div class="page-footer__contacts">
+                <h1 class="page-footer__contact-header">Остались вопросы? Свяжитесь с нами!</h1>
+            <p class="page-footer__contact-text">Звоните:
+                <a href=tel:8(800)1000900 class="phone">
+                    8(800) 1000 900</a></p>
+            <p class="page-footer__contact-text">
+                Пишите:
+                <a href="#" class="email">hello@pinkapp.ru</a>
+                </p>
+        <p class="page-footer__contact-text">Приезжайте в гости!
+        <a href="#" class="adress">Санкт-Петербург, Невский проспект, д. 20</a>
+            </div>
+        </div>
+        <div class="page-footer__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7461291855213!2d30.318908315863613!3d59.93635466924521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x35cdba9c7f3d2206!2sNevsky+pr.%2C+20%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1460727144221" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </footer>
