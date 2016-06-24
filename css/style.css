@@ -10,14 +10,15 @@
 .page-header__wrapper {
     background-color: #b2b2b2;
     opacity: 0.3;
+    height: 66px;
 }
 .page-header .page-header__logo-wrap {
   display: inline-block;
+    float: left;
   min-height: 65px;
   width: 120px;
 }
 .page-header .page-header__logo {
-  float: left;
   margin: 20px;
   width: 74px;
 }
@@ -88,6 +89,10 @@
 .slider-reviews {
     padding: 50px 20px;
 }
+.slider-reviews__item:nth-child(2),
+.slider-reviews__item:nth-child(3){
+    display: none;
+}
 .price {
     background-image: url(../img/grey-background2-320x505.jpg);
     padding-top: 90px;
@@ -130,3 +135,9 @@
 .page-footer__contact-text {
     font-size: 18px;
 }
+.page-footer__contact-text a {
+    font-size: 24px;
+    color: #d8456d;
+    text-decoration: none;
+}
+
