@@ -93,13 +93,32 @@
 .slider-reviews__item:nth-child(3){
     display: none;
 }
+.slider-btn {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: solid grey 1px;
+    border-radius: 10px;
+    background-color: grey;
+    margin-right: 19px;
+    margin-top: 40px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+}
+.slider-btn:last-child {
+    margin-right: 0;
+}
+.slider-btn__active {
+    background-color: white;
+    border: solid black 3px;
+}
 .price {
     background-image: url(../img/grey-background2-320x505.jpg);
     padding-top: 90px;
 }
 .price__table {
     margin: auto;
-    padding-bottom: 90px;
+    padding-bottom: 0px;
     text-transform: uppercase;
 }
 .price__table tr:first-child {
@@ -108,6 +127,20 @@
     display: block;
     padding: 30px 100px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.price__flag {
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    top: 13px;
+    left: -19px;
+    z-index: 2;
+    background-color: #d22856;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    padding-top: 3px;
 }
 .price__table tr {
     text-align: left;
