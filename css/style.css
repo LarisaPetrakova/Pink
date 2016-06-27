@@ -30,11 +30,22 @@
 .page-header__nav-wrap .main-nav__list {
   display: none;
 }
+.main-nav__list a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 320px;
+    margin-left: -290px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    background-color: #283645;
+}
 .header-promo__header {
     color: white;
     font-size: 24px;
     font-weight: 100;
     padding: 0 60px;
+    margin-bottom: 10px;
 }
 .download__wrapper {
     background-color: #1d2631;
@@ -75,16 +86,21 @@
     background-image: url(../img/grey-background-320x828.jpg);
     padding-top: 40px;
 }
-.reasons__item {
+.reasons__item:first-child {
     padding-top: 30px;
+}
+.reasons__item {
+    padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
 }
 .reasons__img {
     margin: auto;
-    width: 170px;
-    height: 261px;
+    width: 160px;
     background-image: url(../img/iphone-case-1@1x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 30px;
 }
 .slider-reviews {
     padding: 50px 20px;
@@ -115,27 +131,52 @@
 .price {
     background-image: url(../img/grey-background2-320x505.jpg);
     padding-top: 90px;
+    overflow: hidden;
 }
 .price__table {
-    margin: auto;
+    width: 1200px;
     padding-bottom: 0px;
     text-transform: uppercase;
+    margin-left: -296px;
 }
-.price__table tr:first-child {
+.price__table tr {
+    border: solid #e5e5e5 2px;
+    border-collapse: collapse;
+}
+.price__table-col-2,
+.price__table-col-3 {
+    border-left:  solid #e5e5e5 2px;
+}
+.price__table-col-1,
+.price__table-col-2,
+.price__table-col-3{
+    display: inline-block;
+    width: 280px;
+}
+.price__table-row-1 td{
     background-color: #283645;
     color: white;
-    display: block;
-    padding: 30px 100px;
+    display: inline-block;
+    padding: 30px 11px 30px 11px;
     text-align: center;
-    position: relative;
     overflow: hidden;
+}
+.price__table-row-2 td,
+.price__table-row-3 td,
+.price__table-row-4 td {
+    background-color: #ffffff;
+    padding: 30px 0 30px 22px;
+    
+}
+.price__table-col-2 {
+    position: relative;
 }
 .price__flag {
     width: 90px;
     height: 20px;
     position: absolute;
     top: 13px;
-    left: -19px;
+    left: -21px;
     z-index: 2;
     background-color: #d22856;
     transform: rotate(-45deg);
@@ -144,17 +185,24 @@
 }
 .price__table tr {
     text-align: left;
-    padding: 20px;
-    display: block;
     color: #283645;
-    border: solid white 2px;
-    border-collapse: collapse;
 }
-.price__table tr:nth-child(2), .price__table tr:nth-child(3) {
-    background: url(../img/yes.svg) no-repeat 230px 18px;
+.price__table-row-2 .price__table-col-1,
+.price__table-row-2 .price__table-col-2,
+.price__table-row-2 .price__table-col-3,
+.price__table-row-3 .price__table-col-3{
+    background-image: url(../img/yes.svg);
+    background-repeat: no-repeat;
+    background-position: 230px 25px;
 }
-.price__table tr:last-child {
-    background: url(../img/no.svg) no-repeat 230px 18px;
+.price__table-row-3 .price__table-col-1,
+.price__table-row-3 .price__table-col-2,
+.price__table-row-4 .price__table-col-1,
+.price__table-row-4 .price__table-col-2,
+.price__table-row-4 .price__table-col-3 {
+    background-image: url(../img/no.svg);
+    background-repeat: no-repeat;
+    background-position: 230px 25px;
 }
 .page-footer__contacts {
     font-size: 24px;
